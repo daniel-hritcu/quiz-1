@@ -13,6 +13,7 @@ namespace quiz1
         public int salary { get; set; }
 
         //Constructor
+        public Employee() { };
         public Employee(int id, string name, int salary) {
             this.id = id;
             this.name = name;
@@ -42,5 +43,20 @@ namespace quiz1
 
         //Use delegate to find the lowest and highest salary among the employee
         //
+
+        //4- Use Dictionary to keep the values of Information of 5 employees in question 2.
+        //a.Use employeeId as the key and the office address as the value.
+        //Will use name not address
+        public Dictionary<int, string> GetEmployeeDictionary() {
+
+            Dictionary<int, string> employees = new Dictionary<int, string>();
+
+            foreach (Employee employee in this.GetEmployees()) {
+                employees.Add(employee.id, employee.name);
+            }
+
+           return employees;
+        }
+        
     }
 }

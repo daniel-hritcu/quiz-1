@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Classes\Generic.cs" />
+    <Compile Include="Classes\IntExtension.cs" />
+    <Compile Include="Methods\PredicateQuestion.cs" />
+    <Compile Include="Methods\TupleQuestion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,9 +58,6 @@
   <ItemGroup>
     <Content Include="Answers\question1.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="Methods\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
